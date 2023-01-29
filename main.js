@@ -33,12 +33,15 @@ function analyze() {
     const userPeriod = document.getElementById("userPeriod");
     const userColor = document.getElementById("userColor");
 
+    /* here is the condition that makes a user a classic northeastern university basketball fan. 
+    A user has to like basketball, prefer college to pro, classic teams over current and 
+    their favorite color is red, resulting in the output.*/
     console.log("")
     if (userSport.value == "Basketball") {
         if (userPreference.value == "College")
             if (userPeriod.value == "Classic")
                 if (userColor.value == "Red") {
-                    output("You are a Classic Northeastern University Basketball Fan 🏀");
+                    output("You are a Classic Northeastern University Basketball Fan 🏀🔴");
                 }
 
     }
@@ -48,7 +51,7 @@ function analyze() {
         if (userPreference.value == "Professional")
             if (userPeriod.value == "Classic")
                 if (userColor.value == "Red") {
-                    output("You are a Classic Miam Heat Fan 🏀 #feeltheburn");
+                    output("You are a Classic Miam Heat Fan 🏀🔴");
                 }
 
     }
@@ -58,7 +61,7 @@ function analyze() {
         if (userPreference.value == "College")
             if (userPeriod.value == "Current")
                 if (userColor.value == "Red") {
-                    output("You are a Northeastern University Basketball Fan 🏀 #GoHuskies");
+                    output("You are a Northeastern University Basketball Fan 🏀🔴 #GoHuskies");
                 }
 
     }
@@ -68,10 +71,106 @@ function analyze() {
         if (userPreference.value == "Professional")
             if (userPeriod.value == "Current")
                 if (userColor.value == "Red") {
-                    output("You are a Miami Heat Fan 🏀 #feeltheburn");
+                    output("You are a Miami Heat Fan 🏀🔴 #feeltheburn");
                 }
 
     }
+
+    console.log("")
+    if (userSport.value == "Basketball") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Blue") {
+                    output("You are a Duke University Fan 🏀🔵 #Duke'sbluedevils");
+                }
+
+    }
+
+    console.log("")
+    if (userSport.value == "Basketball") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Classic")
+                if (userColor.value == "Blue") {
+                    output("You are a Classic Duke University Fan 🏀🔵");
+                }
+
+    }
+
+    console.log("")
+    if (userSport.value == "Basketball") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Classic")
+                if (userColor.value == "Blue") {
+                    output("You are a Classic Dallas Maverick Fan 🏀🔵");
+                }
+
+    }
+
+    console.log("")
+    if (userSport.value == "Basketball") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Blue") {
+                    output("You are a Dallas Maverick Fan 🏀🔵 #MarvelousMavericks");
+                }
+
+    }
+
+    /*Soccer section*/
+    console.log("")
+    if (userSport.value == "Soccer") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Blue") {
+                    output("You are a Chelsea Fan ⚽🔵 #COYB");
+                }
+
+    }
+
+    console.log("")
+    if (userSport.value == "Soccer") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Classic")
+                if (userColor.value == "Blue") {
+                    output("You are a Classic Chelsea Fan ⚽🔵");
+                }
+
+    }
+
+
+    console.log("")
+    if (userSport.value == "Soccer") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Red") {
+                    output("You are a Manchester United Fan ⚽🔴 #GloryGloryManUnited");
+                }
+
+    }
+
+    console.log("")
+    if (userSport.value == "Soccer") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Classic")
+                if (userColor.value == "Red") {
+                    output("You are a Classic Manchester United Fan ⚽🔴");
+                }
+
+    }
+
+
+    console.log("")
+    if (userSport.value == "Soccer") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Red") {
+                    output("You are a Santa Clara University Fan ⚽🔴 #BuckyBroncos");
+                }
+
+    }
+
+
+
 
     output(dropdown.value, true)
     output("<p>Example of <b>HTML-formatted</b> output</p>", true);
