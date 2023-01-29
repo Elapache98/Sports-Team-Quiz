@@ -169,6 +169,36 @@ function analyze() {
 
     }
 
+    console.log("")
+    if (userSport.value == "Soccer") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Classic")
+                if (userColor.value == "Red") {
+                    output("You are a Classic Santa Clara University Fan ⚽🔴");
+                }
+
+    }
+
+    console.log("")
+    if (userSport.value == "Soccer") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Blue") {
+                    output("You are a Georgetown Fan ⚽🔵 #GeorgetownHoyas");
+                }
+
+    }
+
+
+    console.log("")
+    if (userSport.value == "Soccer") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Classic")
+                if (userColor.value == "Blue") {
+                    output("You are a Georgetown Fan ⚽🔵");
+                }
+
+    }
 
 
 
