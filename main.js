@@ -63,6 +63,16 @@ function analyze() {
 
     }
 
+    console.log("")
+    if (userSport.value == "Basketball") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Red") {
+                    output("You are a Miami Heat Fan 🏀 #feeltheburn");
+                }
+
+    }
+
     output(dropdown.value, true)
     output("<p>Example of <b>HTML-formatted</b> output</p>", true);
     output("<h3>Example of output that should be HTML-formatted but without sending second parameter <b>true</b>");
