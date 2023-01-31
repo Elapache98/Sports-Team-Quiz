@@ -195,10 +195,74 @@ function analyze() {
         if (userPreference.value == "College")
             if (userPeriod.value == "Classic")
                 if (userColor.value == "Blue") {
-                    output("You are a Georgetown Fan ⚽🔵");
+                    output("You are a Classic Georgetown Fan ⚽🔵");
                 }
 
     }
+    /*Ice Hockey*/
+    console.log("")
+    if (userSport.value == "Ice Hockey") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Classic")
+                if (userColor.value == "Blue") {
+                    output("You are a Classic Penn State Fan 🏒🔵");
+                }
+
+    }
+
+    console.log("")
+    if (userSport.value == "Ice Hockey") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Blue") {
+                    output("You are a Penn State Fan 🏒🔵 #LetsGoPanthers!");
+                }
+
+    }
+
+    console.log("")
+    if (userSport.value == "Ice Hockey") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Blue") {
+                    output("You are a Toronto Maple Leafs Fan 🏒🔵 #WeMayBesweetButWeKeepOurPucksSticky!");
+                }
+
+    }
+
+    console.log("")
+    if (userSport.value == "Ice Hockey") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Classic")
+                if (userColor.value == "Blue") {
+                    output("You are a Classic Toronto Maple Leafs Fan 🏒🔵");
+                }
+
+    }
+
+
+
+
+    console.log("")
+    if (userSport.value == "Ice Hockey") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Yellow") {
+                    output("You are a University of Michigan Fan 🏒🟡 #LetsGoWolverines!");
+                }
+
+    }
+
+    console.log("")
+    if (userSport.value == "Ice Hockey") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Classic")
+                if (userColor.value == "Yellow") {
+                    output("You are a Classic University of Michigan Fan 🏒🟡");
+                }
+
+    }
+
 
 
 
