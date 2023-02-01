@@ -116,6 +116,46 @@ function analyze() {
 
     }
 
+    console.log("")
+    if (userSport.value == "Basketball") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Yellow") {
+                    output("You are a Golden State Warriors Fan 🏀🟡 #DubNation");
+                }
+
+    }
+
+    console.log("")
+    if (userSport.value == "Basketball") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Classic")
+                if (userColor.value == "Yellow") {
+                    output("You are a Classic Golden State Warriors Fan 🏀🟡");
+                }
+
+    }
+
+    console.log("")
+    if (userSport.value == "Basketball") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Yellow") {
+                    output("You are a Drexel University Fan 🏀🟡 #LetsGoDragons");
+                }
+
+    }
+
+    console.log("")
+    if (userSport.value == "Basketball") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Classic")
+                if (userColor.value == "Yellow") {
+                    output("You are a Classic Drexel University Fan 🏀🟡");
+                }
+
+    }
+
     /*Soccer section*/
     console.log("")
     if (userSport.value == "Soccer") {
@@ -136,6 +176,28 @@ function analyze() {
                 }
 
     }
+
+    console.log("")
+    if (userSport.value == "Soccer") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Blue") {
+                    output("You are a Georgetown Fan ⚽🔵 #GeorgetownHoyas");
+                }
+
+    }
+
+
+    console.log("")
+    if (userSport.value == "Soccer") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Classic")
+                if (userColor.value == "Blue") {
+                    output("You are a Classic Georgetown Fan ⚽🔵");
+                }
+
+    }
+
 
 
     console.log("")
@@ -179,27 +241,48 @@ function analyze() {
 
     }
 
-    console.log("")
-    if (userSport.value == "Soccer") {
-        if (userPreference.value == "College")
-            if (userPeriod.value == "Current")
-                if (userColor.value == "Blue") {
-                    output("You are a Georgetown Fan ⚽🔵 #GeorgetownHoyas");
-                }
-
-    }
-
 
     console.log("")
     if (userSport.value == "Soccer") {
         if (userPreference.value == "College")
             if (userPeriod.value == "Classic")
-                if (userColor.value == "Blue") {
-                    output("You are a Classic Georgetown Fan ⚽🔵");
+                if (userColor.value == "Yellow") {
+                    output("You are a Classic University of Wisconsin-Superior Fan ⚽🟡");
                 }
 
     }
-    /*Ice Hockey*/
+
+    console.log("")
+    if (userSport.value == "Soccer") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Yellow") {
+                    output("You are a University of Wisconsin-Superior Fan ⚽🟡 #BuzztheBeeGonnaStingYa");
+                }
+
+    }
+
+    console.log("")
+    if (userSport.value == "Soccer") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Classic")
+                if (userColor.value == "Yellow") {
+                    output("You are a Classic Norwich City F.C Fan ⚽🟡");
+                }
+
+    }
+
+    console.log("")
+    if (userSport.value == "Soccer") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Yellow") {
+                    output("You are a Norwich City F.C Fan #ProtectTheNest ⚽🟡");
+                }
+
+    }
+
+    /*Ice Hockey section*/
     console.log("")
     if (userSport.value == "Ice Hockey") {
         if (userPreference.value == "College")
@@ -240,9 +323,6 @@ function analyze() {
 
     }
 
-
-
-
     console.log("")
     if (userSport.value == "Ice Hockey") {
         if (userPreference.value == "College")
@@ -263,6 +343,59 @@ function analyze() {
 
     }
 
+    console.log("")
+    if (userSport.value == "Ice Hockey") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Classic")
+                if (userColor.value == "Yellow") {
+                    output("You are a Classic Bruins Fan 🏒🟡");
+                }
+    }
+    console.log("")
+    if (userSport.value == "Ice Hockey") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Yellow") {
+                    output("You are a Bruins Fan 🏒🟡 #LetsGoBruins");
+                }
+    }
+
+    console.log("")
+    if (userSport.value == "Ice Hockey") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Red") {
+                    output("You are a Northeastern Fan 🏒🔴 #LetsGoHuskies");
+                }
+    }
+
+    console.log("")
+    if (userSport.value == "Ice Hockey") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Classic")
+                if (userColor.value == "Red") {
+                    output("You are a Classic Northeastern Fan 🏒🔴");
+                }
+    }
+
+    console.log("")
+    if (userSport.value == "Ice Hockey") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Red") {
+                    output("You are a Detroit Red Wings Fan 🏒🔴 #RedBullGivesYouWings");
+                }
+    }
+
+    console.log("")
+    if (userSport.value == "Ice Hockey") {
+        if (userPreference.value == "Professional")
+            if (userPeriod.value == "Classic")
+                if (userColor.value == "Red") {
+                    output("You are a Classic Detroit Red Wings Fan 🏒🔴");
+                }
+    }
+
 
 
 
@@ -278,15 +411,15 @@ function analyze() {
 
 /* ***** function output() *****
 Appends the provided String to an HTML element called "output". String may be output as plain text or as HTML.
-
+ 
 Requirements: An element with id="output" in the current Document Object (generally the index.html)
-
+ 
 Parameters:
 content     String to be added to "output"
 htmlFlag    Boolean (default false):
             if false, add content within a <p> tag
             if true, treat content as HTML ready to output
-
+ 
 Returns: Nothing
 ******************************** */
 
@@ -308,13 +441,13 @@ function output(content, htmlFlag) {
 
 /* ***** function endOutput() *****
 Appends a horizontal rule (<hr> element) to Document Object with id="output".
-
+ 
 Requirements: An element with id="output" in the current Document Object (generally the index.html)
-
+ 
 Parameters: None
-
+ 
 Returns: Nothing 
-
+ 
 *********************************** */
 
 function endOutput() {
