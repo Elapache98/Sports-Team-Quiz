@@ -3,39 +3,27 @@
 let calc_btn = document.getElementById("action");
 calc_btn.addEventListener("click", analyze);
 
+
+/*is pulling the right term here? Either way I am getting the id's of these elements from my index.html so they can be called through my
+main.js*/
+
 function analyze() {
-    /*
-        FIRST, flowchart the logic for your analyze() function. Do this BEFORE you write your code, and you will find writing the code easier! You ONLY need to flowchart this function, NOT your other code (so START is when this function is called and END is the end of your output).
-        
-        NEXT, write your "analysis" code in this function. At a minimum, you must:
-        
-        * Create variables to hold values from your form elements
-        * If needed, convert variables from Strings to Numbers
-        * Use conditional logic and perform calculations on your variables
-        * Call "output" as many times as needed to produce your results
-    
-    --------------------------------------------------------
-    VERY IMPORTANT!!!! Above each condition that you write, provide a multi-line comment that clearly explains in English what your conditional logic does. This is a major part of the grade.
-    --------------------------------------------------------
-        
-        Other important things to remember:
-        * Name your variables meaningfully (with good spelling)
-        * Use VSCode's autoformatting regularly to make your code readable
-        * If you use coding techniques that you learned outside of this class, be sure to CITE YOUR SOURCE in a comment.
-        * Look at the new documentation for function output(). Now you can call the output function two ways: send it just a String (or a variable containing a String), and you it will create a new paragraph (<p> tagset on your page). Add Boolean true as a second parameter, and output will instead treat your String as HTML. This second option gives you more control over the look of your output!
-        * Use endOutput() as the last line before the analyze() function ends (we've even put it in for you already!)
-        * Don't forget that you need to edit index.html as well!
-    
-        DELETE THIS CODE COMMENT before turning in your homework! You MAY leave in the other JavaScript comments that document functions and tell you where to start and stop writing code, but you will LOSE points if you leave in this long comment!
-    */
     const userSport = document.getElementById("userSport");
     const userPreference = document.getElementById("userPreference");
     const userPeriod = document.getElementById("userPeriod");
     const userColor = document.getElementById("userColor");
 
-    /* here is the condition that makes a user a classic northeastern university basketball fan. 
-    A user has to like basketball, prefer college to pro, classic teams over current and 
-    their favorite color is red, resulting in the output.*/
+
+    /*Basketball Section- Red Basketball College teams past & present logic
+    
+    For the basketball section the logic here is that once a user has chosen basketball as their sport's preference
+    the output would be a Basketball team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+    is also decided by what a user's favorite color is. 
+    Current teams outputs will have a social media "#" to show we live in current times as opposed to the past
+    when supporting a sports team could only be experienced in-person. Social media allows people to support 
+    teams from anywhere in the world */
+
+
     console.log("")
     if (userSport.value == "Basketball") {
         if (userPreference.value == "College")
@@ -45,6 +33,26 @@ function analyze() {
                 }
 
     }
+
+
+    console.log("")
+    if (userSport.value == "Basketball") {
+        if (userPreference.value == "College")
+            if (userPeriod.value == "Current")
+                if (userColor.value == "Red") {
+                    output("You are a Northeastern University Basketball Fan 🏀🔴 #GoHuskies");
+                }
+
+    }
+
+    /*Basketball Section- Red Professional teams past & present logic
+        
+        For the basketball section the logic here is that once a user has chosen basketball as their sport's preference
+        the output would be a Basketball team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+        is also decided by what a user's favorite color is. 
+        Current teams often have a social media "#" as to show we live in current times as opposed to the past
+        when supporting a sports team could only be experienced in-person. Social media allows people to support 
+        teams from anywhere in the world */
 
     console.log("")
     if (userSport.value == "Basketball") {
@@ -58,16 +66,6 @@ function analyze() {
 
     console.log("")
     if (userSport.value == "Basketball") {
-        if (userPreference.value == "College")
-            if (userPeriod.value == "Current")
-                if (userColor.value == "Red") {
-                    output("You are a Northeastern University Basketball Fan 🏀🔴 #GoHuskies");
-                }
-
-    }
-
-    console.log("")
-    if (userSport.value == "Basketball") {
         if (userPreference.value == "Professional")
             if (userPeriod.value == "Current")
                 if (userColor.value == "Red") {
@@ -75,6 +73,15 @@ function analyze() {
                 }
 
     }
+
+    /*Basketball Section- Blue College teams past & present logic 
+        
+        For the basketball section the logic here is that once a user has chosen basketball as their sport's preference
+        the output would be a Basketball team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+        is also decided by what a user's favorite color is. 
+        Current teams often have a social media "#" as to show we live in current times as opposed to the past
+        when supporting a sports team could only be experienced in-person. Social media allows people to support 
+        teams from anywhere in the world */
 
     console.log("")
     if (userSport.value == "Basketball") {
@@ -96,6 +103,15 @@ function analyze() {
 
     }
 
+    /*Basketball Section- Blue Professional teams past & present logic
+        
+        For the basketball section the logic here is that once a user has chosen basketball as their sport's preference
+        the output would be a Basketball team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+        is also decided by what a user's favorite color is. 
+        Current teams often have a social media "#" as to show we live in current times as opposed to the past
+        when supporting a sports team could only be experienced in-person. Social media allows people to support 
+        teams from anywhere in the world */
+
     console.log("")
     if (userSport.value == "Basketball") {
         if (userPreference.value == "Professional")
@@ -115,13 +131,21 @@ function analyze() {
                 }
 
     }
-
+    /*Basketball Section- Yellow Professional teams past & present logic 
+           
+           For the basketball section the logic here is that once a user has chosen basketball as their sport's preference
+           the output would be a Basketball team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+           is also decided by what a user's favorite color is. 
+           Current teams often have a social media "#" as to show we live in current times as opposed to the past
+           when supporting a sports team could only be experienced in-person. Social media allows people to support 
+           teams from anywhere in the world */
     console.log("")
     if (userSport.value == "Basketball") {
         if (userPreference.value == "Professional")
             if (userPeriod.value == "Current")
                 if (userColor.value == "Yellow") {
                     output("You are a Golden State Warriors Fan 🏀🟡 #DubNation");
+
                 }
 
     }
@@ -132,10 +156,20 @@ function analyze() {
             if (userPeriod.value == "Classic")
                 if (userColor.value == "Yellow") {
                     output("You are a Classic Golden State Warriors Fan 🏀🟡");
+
                 }
 
     }
 
+
+    /*Basketball Section- Yellow College teams past & present logic 
+       
+       For the basketball section the logic here is that once a user has chosen basketball as their sport's preference
+       the output would be a Basketball team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+       is also decided by what a user's favorite color is. 
+       Current teams often have a social media "#" as to show we live in current times as opposed to the past
+       when supporting a sports team could only be experienced in-person. Social media allows people to support 
+       teams from anywhere in the world */
     console.log("")
     if (userSport.value == "Basketball") {
         if (userPreference.value == "College")
@@ -156,7 +190,17 @@ function analyze() {
 
     }
 
+
     /*Soccer section*/
+
+    /*Soccer Section- Blue Pro teams past & present logic 
+      
+      For the Soccer section the logic here is that once a user has chosen basketball as their sport's preference
+      the output would be a Soccer team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+      is also decided by what a user's favorite color is. 
+      Current teams often have a social media "#" as to show we live in current times as opposed to the past
+      when supporting a sports team could only be experienced in-person. Social media allows people to support 
+      teams from anywhere in the world */
     console.log("")
     if (userSport.value == "Soccer") {
         if (userPreference.value == "Professional")
@@ -177,6 +221,14 @@ function analyze() {
 
     }
 
+    /*Soccer Section- Blue College teams past & present logic 
+       
+       For the Soccer section the logic here is that once a user has chosen basketball as their sport's preference
+       the output would be a Soccer team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+       is also decided by what a user's favorite color is. 
+       Current teams often have a social media "#" as to show we live in current times as opposed to the past
+       when supporting a sports team could only be experienced in-person. Social media allows people to support 
+       teams from anywhere in the world */
     console.log("")
     if (userSport.value == "Soccer") {
         if (userPreference.value == "College")
@@ -198,7 +250,14 @@ function analyze() {
 
     }
 
-
+    /*Soccer Section- Red Pro teams past & present logic 
+           
+           For the Soccer section the logic here is that once a user has chosen basketball as their sport's preference
+           the output would be a Soccer team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+           is also decided by what a user's favorite color is. 
+           Current teams often have a social media "#" as to show we live in current times as opposed to the past
+           when supporting a sports team could only be experienced in-person. Social media allows people to support 
+           teams from anywhere in the world */
 
     console.log("")
     if (userSport.value == "Soccer") {
@@ -221,6 +280,15 @@ function analyze() {
     }
 
 
+    /*Soccer Section- Red College teams past & present logic 
+           
+           For the Soccer section the logic here is that once a user has chosen basketball as their sport's preference
+           the output would be a Soccer team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+           is also decided by what a user's favorite color is. 
+           Current teams often have a social media "#" as to show we live in current times as opposed to the past
+           when supporting a sports team could only be experienced in-person. Social media allows people to support 
+           teams from anywhere in the world */
+
     console.log("")
     if (userSport.value == "Soccer") {
         if (userPreference.value == "College")
@@ -241,7 +309,14 @@ function analyze() {
 
     }
 
-
+    /*Soccer Section- Yellow College teams past & present logic 
+              
+              For the Soccer section the logic here is that once a user has chosen basketball as their sport's preference
+              the output would be a Soccer team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+              is also decided by what a user's favorite color is. 
+              Current teams often have a social media "#" as to show we live in current times as opposed to the past
+              when supporting a sports team could only be experienced in-person. Social media allows people to support 
+              teams from anywhere in the world */
     console.log("")
     if (userSport.value == "Soccer") {
         if (userPreference.value == "College")
@@ -261,6 +336,14 @@ function analyze() {
                 }
 
     }
+    /*Soccer Section- Yellow Pro teams past & present logic 
+              
+              For the Soccer section the logic here is that once a user has chosen basketball as their sport's preference
+              the output would be a Soccer team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+              is also decided by what a user's favorite color is. 
+              Current teams often have a social media "#" as to show we live in current times as opposed to the past
+              when supporting a sports team could only be experienced in-person. Social media allows people to support 
+              teams from anywhere in the world */
 
     console.log("")
     if (userSport.value == "Soccer") {
@@ -283,6 +366,15 @@ function analyze() {
     }
 
     /*Ice Hockey section*/
+
+    /*Hockey Section- Blue College teams past & present logic 
+           
+           For the Hockey section the logic here is that once a user has chosen basketball as their sport's preference
+           the output would be a Hockey team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+           is also decided by what a user's favorite color is. 
+           Current teams often have a social media "#" as to show we live in current times as opposed to the past
+           when supporting a sports team could only be experienced in-person. Social media allows people to support 
+           teams from anywhere in the world */
     console.log("")
     if (userSport.value == "Ice Hockey") {
         if (userPreference.value == "College")
@@ -303,6 +395,14 @@ function analyze() {
 
     }
 
+    /*Hockey Section- Blue Pro teams past & present logic 
+          
+          For the Hockey section the logic here is that once a user has chosen basketball as their sport's preference
+          the output would be a Hockey team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+          is also decided by what a user's favorite color is. 
+          Current teams often have a social media "#" as to show we live in current times as opposed to the past
+          when supporting a sports team could only be experienced in-person. Social media allows people to support 
+          teams from anywhere in the world */
     console.log("")
     if (userSport.value == "Ice Hockey") {
         if (userPreference.value == "Professional")
@@ -322,6 +422,15 @@ function analyze() {
                 }
 
     }
+
+    /*Hockey Section- Yellow College teams past & present logic 
+             
+             For the Hockey section the logic here is that once a user has chosen basketball as their sport's preference
+             the output would be a Hockey team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+             is also decided by what a user's favorite color is. 
+             Current teams often have a social media "#" as to show we live in current times as opposed to the past
+             when supporting a sports team could only be experienced in-person. Social media allows people to support 
+             teams from anywhere in the world */
 
     console.log("")
     if (userSport.value == "Ice Hockey") {
@@ -343,12 +452,20 @@ function analyze() {
 
     }
 
+    /*Hockey Section- Yellow Pro teams past & present logic 
+         
+         For the Hockey section the logic here is that once a user has chosen basketball as their sport's preference
+         the output would be a Hockey team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+         is also decided by what a user's favorite color is. 
+         Current teams often have a social media "#" as to show we live in current times as opposed to the past
+         when supporting a sports team could only be experienced in-person. Social media allows people to support 
+         teams from anywhere in the world */
     console.log("")
     if (userSport.value == "Ice Hockey") {
         if (userPreference.value == "Professional")
             if (userPeriod.value == "Classic")
                 if (userColor.value == "Yellow") {
-                    output("You are a Classic Bruins Fan 🏒🟡");
+                    output("You are a Classic Boston Bruins Fan 🏒🟡");
                 }
     }
     console.log("")
@@ -356,9 +473,18 @@ function analyze() {
         if (userPreference.value == "Professional")
             if (userPeriod.value == "Current")
                 if (userColor.value == "Yellow") {
-                    output("You are a Bruins Fan 🏒🟡 #LetsGoBruins");
+                    output("You are a Boston Bruins Fan 🏒🟡 #LetsGoBruins");
                 }
     }
+
+    /*Hockey Section- Red College teams past & present logic 
+         
+         For the Hockey section the logic here is that once a user has chosen basketball as their sport's preference
+         the output would be a Hockey team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+         is also decided by what a user's favorite color is. 
+         Current teams often have a social media "#" as to show we live in current times as opposed to the past
+         when supporting a sports team could only be experienced in-person. Social media allows people to support 
+         teams from anywhere in the world */
 
     console.log("")
     if (userSport.value == "Ice Hockey") {
@@ -377,6 +503,15 @@ function analyze() {
                     output("You are a Classic Northeastern Fan 🏒🔴");
                 }
     }
+
+    /*Hockey Section- Red Proteams past & present logic 
+            
+            For the Hockey section the logic here is that once a user has chosen basketball as their sport's preference
+            the output would be a Hockey team that depends on if a user prefers college or professional teams, classic or current teams and finally the output
+            is also decided by what a user's favorite color is. 
+            Current teams often have a social media "#" as to show we live in current times as opposed to the past
+            when supporting a sports team could only be experienced in-person. Social media allows people to support 
+            teams from anywhere in the world */
 
     console.log("")
     if (userSport.value == "Ice Hockey") {
@@ -401,7 +536,7 @@ function analyze() {
 
     output(dropdown.value, true)
     output("<p>Example of <b>HTML-formatted</b> output</p>", true);
-    output("<h3>Example of output that should be HTML-formatted but without sending second parameter <b>true</b>");
+    output("<h3>Example of output that should be HTML-formatted but without sending second parameter</h3>", true);
     output("Example of regular text output, letting the output() function do the formatting.");
 
 
